@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DemoDevExtremeJQ</title>
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="~/lib/Chart.js/Chart.min.css" />
+    <link rel="stylesheet" href="~/lib/sb-admin/sb-admin-2.min.css?v=0.010" />
+    <link rel="stylesheet" href="~/lib/select2/select2.min.css">
+    <link rel="stylesheet" href="~/lib/select2/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="~/styles/floating-labels.css" />
+    <link rel="stylesheet" href="~/css/fullcalendar.min.css" />
+    <link rel="stylesheet" href="~/lib/chosen/chosen.min.css?v=0.006" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/content/tables/" />
+    <script src="https://cdn.jsdelivr.net/gh/jamesssooi/Croppr.js@2.3.0/dist/croppr.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/jamesssooi/Croppr.js@2.3.0/dist/croppr.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css" integrity="sha256-6y4q3Cui535VG+TapOjQwXKsxgXP+hfcld77yOd/fac=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="~/styles/styles.css" />
+
+    <link rel="stylesheet" href="~/styles/font.css" />
+
+    <link rel="stylesheet" href="~/styles/LayoutStyles.css?v=0.001" />
+    <link rel="stylesheet" href="~/styles/customStyles.css?v=0.005" />
+    <link rel="stylesheet" href="~/styles/Main.css?v=0.002" />
+    <link rel="stylesheet" href="~/styles/Responsive/styles.css" />
+    <link rel="stylesheet" href="~/styles/Responsive/tablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="~/styles/Responsive/smallScreen.css" media="(min-width: 1024px)" />
+    <link rel="stylesheet" href="~/styles/Responsive/largeScreen.css" media="(min-width: 1200px)" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/2.1.68/dx-diagram.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/4.0.27/dx-gantt.min.css" rel="stylesheet">
+
+    <!-- Theme stylesheets (reference only one of them) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.carmine.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.carmine.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.contrast.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.contrast.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.darkmoon.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.darkmoon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.darkviolet.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.darkviolet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.greenmist.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.greenmist.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.blue.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.blue.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.blue.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.blue.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.lime.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.lime.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.lime.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.lime.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.orange.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.orange.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.orange.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.orange.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.purple.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.purple.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.purple.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.purple.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.teal.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.teal.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.teal.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.material.teal.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.softblue.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/css/dx.softblue.css" rel="stylesheet">
+
+</head>
+<body>
+    <script type="text/javascript" src="~/lib/jquery/jquery.min.js?v=0.001"></script>
+    <script type="text/javascript" src="~/lib/jquery-UI/jquery-ui.js?v=0.001"></script>
+    <script type="text/javascript" src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-dateformat/jquery-dateformat.min.js?v=031"></script>
+    <script type="text/javascript" src="~/lib/jquery-mask/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-mask/jquery.maskMoney.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-numeric/jquery.numeric.js"></script>
+    <script type="text/javascript" src="~/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="~/lib/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="~/lib/sb-admin/sb-admin-2.min.js"></script>
+    <script type="text/javascript" src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/js/jquery.dataTables.js?v=006"></script>
+    <script type="text/javascript" src="~/lib/datatables/js/dataTables.bootstrap4.min.js?v=005"></script>
+    <script type="text/javascript" src="~/lib/Chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="~/lib/font-awesome/js/all.min.js"></script>
+    <script type="text/javascript" src="~/lib/read-excel-file/bundle/read-excel-file.min.js"></script>
+    <script type="text/javascript" src="~/js/util/ITC_Util.js?v=0.099"></script>
+    <script type="text/javascript" src="~/js/util/ITC_Charts.js?v=0.037"></script>
+    <script type="text/javascript" src="~/js/util/ITC_Param.js?v=0.037"></script>
+    <script type="text/javascript" src="~/js/util/functions.js"></script>
+    <script type="text/javascript" src="~/js/Param.js"></script>
+    <script type="text/javascript" src="~/js/Index.js?v=0.016"></script>
+    <script type="text/javascript" src="~/lib/chartjs-plugin-doughnutlabel/chartjs-plugin-doughnutlabel.min.js"></script>
+    <script type="text/javascript" src="~/js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="~/lib/chosen/chosen.jquery.js?v=0.002"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js" integrity="sha256-ncetQ5WcFxZU3YIwggfwOwmewLVX4SHLBtDYnrsxooY=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.es.min.js" integrity="sha256-K5G+7qV0tjuHL0LlhCU0TqQKR+7QwT8MfEUe2UgpmRY=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+
+        (() =>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+
+                $('select').each(function () {
+                    $(this).select2({
+                        theme: 'bootstrap4',
+                        width: 'style',
+                        placeholder: $(this).attr('placeholder'),
+                        allowClear: Boolean($(this).data('allow-clear')),
+                    });
+                });
+            }))();
+
+        (function ($) {
+            $.fn.inputFilter = function (inputFilter) {
+                return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function () {
+                    if (inputFilter(this.value)) {
+                        this.oldValue = this.value;
+                        this.oldSelectionStart = this.selectionStart;
+                        this.oldSelectionEnd = this.selectionEnd;
+                    } else if (this.hasOwnProperty("oldValue")) {
+                        this.value = this.oldValue;
+                        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                    } else {
+                        this.value = "";
+                    }
+                });
+            };
+        }(jQuery));
+
+        $.validator.addMethod("notEqualTo", function (value, element, param) {
+            return this.optional(element) || value != param;
+        }, "Please enter a diferent value.");
+    </script>
+    <script type="text/javascript">
+        (function (w, d, s, r, k, h, m) { if (w.performance && w.performance.timing && w.performance.navigation) { w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) }; h = d.createElement('script'); h.async = true; h.setAttribute('src', s + k); d.getElementsByTagName('head')[0].appendChild(h); (m = window.onerror), (window.onerror = function (b, c, d, f, g) { m && m(b, c, d, f, g), g || (g = new Error(b)), (w[r].q = w[r].q || []).push(["captureException", g]); }) } })(window, document, '//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=', 's247r', '22a7fc67d3582f68ecb08fd31a7f8f27');
+    </script>
+
+    <!-- Diagram and Gantt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/2.1.68/dx-diagram.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/4.0.27/dx-gantt.min.js"></script>
+
+    <!-- DevExtreme Quill (required by the HtmlEditor UI component) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/~1.5.18/dx-quill.min.js"></script>
+
+    <!-- DevExtreme library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.2.14/js/dx.all.js"></script>
+
+    <!-- DevExpress.AspNet.Data -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-aspnet-data/3.0.0/dx.aspnet.data.min.js"></script>
+
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DemoDevExtremeJQ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Table" asp-action="Index">Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div id="divModalMsg" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h5 class="modal-title" id="h5ModalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="divModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="background: #22222270;" id="divModalLoading" data-backdrop="static" data-bs-backdrop="static" data-bs-keyboard="false" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="~/images/loading.gif" width="50px" />
+                    <div class="loader-txt" id="divLoaderText">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - DemoDevExtremeJQ - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

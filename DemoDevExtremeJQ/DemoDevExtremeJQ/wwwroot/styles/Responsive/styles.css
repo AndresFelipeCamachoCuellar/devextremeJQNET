@@ -1,0 +1,226 @@
+﻿header .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-shadow: 0px -3px 13px 3px;
+}
+
+.header-company-logo {
+    width: 90px;
+    margin: 0px;
+    background-image: url(/images/EFICACIA.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header #header-username {
+    font-weight: 700;
+    margin: auto;
+    color: var(--primary);
+    display: none;
+}
+
+header .navbar .navbar-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+header .navbar .navbar-items .header-notifications a #divNumeroNotificacionesSeguimientos{
+    top: 21px;
+}
+
+header .navbar .navbar-items .header-notifications a #header-menu--NotificationText{
+    display: none;
+}
+
+header .navbar .navbar-items .header-userProfile a #Header-menu--UserName{
+    display: none;
+}
+
+header .navbar .navbar-items .header-userProfile a{
+    padding-right:0px;
+}
+
+header .navbar .navbar-items .header-userProfile a #spanFullName{
+    margin-right:0px;
+}
+
+#asideTopbarSeparator {
+    height: 123px;
+}
+
+#wrapper #content-wrapper{
+    margin-top: 4.375rem;
+}
+
+/*  ScrollBar  */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--ligth);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 8px;
+}
+
+/* Notificaciones */
+
+#notification-background {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #3d3d3d47;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    flex-direction: row-reverse;
+    z-index:1031;
+}
+
+#notification-zone {
+    background-color: white;
+    height: 100%;
+    width: 320px;
+    box-shadow: 9px -1px 27px 2px black;
+    padding-right: 3px;
+    position: fixed;
+}
+
+.notification-zone--header {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #bcbdc1;
+    background: var(--primary);
+    color: var(--light);
+}
+
+.notification-zone--body {
+    overflow: scroll;
+    height: calc(100% - 49px);
+}
+
+.notification-zone--item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 0.5rem 1.5rem 0.5rem 0px;
+}
+
+.notification-item--name {
+    font-size: 0.85rem;
+    color: #3a3b45;
+    line-height: 1.3rem;
+    font-weight:700;
+}
+
+.notification-zone--item:hover {
+    background-color: #f2f2f2;
+}
+
+.userBanner {
+    width: auto;
+    height: auto;
+    background: #ffff;
+    padding: 15px 12px;
+    margin: 1.5rem 20px 1.5rem 21px;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+
+.userBanner--details{
+
+}
+
+.userBanner--fullName {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.userBanner-details--item {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.userBanner-options {
+    position: absolute;
+    top: 11px;
+    width: 100%;
+    padding: 0px 11px;
+}
+
+.userBanner-options--wrapper {
+    list-style: none;
+    height: auto;
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* OFFCANVAS */
+#sidebarToggleTop {
+    display: inline-block;
+}
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1029;
+    --bs-offcanvas-width: 224px;
+    --bs-offcanvas-height: 30vh;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 0.5rem;
+    --bs-offcanvas-color:;
+    --bs-offcanvas-bg: var(--primary);
+    --bs-offcanvas-border-width: 1px;
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: var(--bs-offcanvas-zindex);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: calc(100% - 70px);
+    color: var(--bs-offcanvas-color);
+    visibility: hidden;
+    background-color: var(--bs-offcanvas-bg);
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.offcanvas.offcanvas-start {
+    left: 0;
+    width: var(--bs-offcanvas-width);
+    border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(-100%);
+}
+
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+    visibility: visible;
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+}
+
+.offcanvas-body {
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: auto;
+}

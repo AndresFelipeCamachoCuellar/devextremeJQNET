@@ -1,0 +1,31 @@
+﻿/*min-width: 768px*/
+
+
+.header-company-logo {
+    width: 212px;
+    background-size: 136px;
+}
+
+header .navbar .navbar-items .header-notifications a #divNumeroNotificacionesSeguimientos {
+    right: 7.7rem;
+}
+
+header .navbar .navbar-items .header-notifications a #header-menu--NotificationText {
+    display: inline-block;
+}
+
+header .navbar .navbar-items .header-userProfile a #Header-menu--UserName {
+    display: inline-block;
+}
+
+header .navbar .navbar-items .header-userProfile a{
+    padding-right:12px;
+}
+
+header .navbar .navbar-items .header-userProfile a #spanFullName{
+    margin-right:1rem;
+}
+
+#asideTopbarSeparator {
+    height: 130px;
+}

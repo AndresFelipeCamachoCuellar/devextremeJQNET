@@ -1,0 +1,71 @@
+﻿/*min-width: 1024px*/
+
+header #header-username {
+    display: inline-block;
+}
+
+header #header-username[data-show="true"][data-mainview="true"] {
+    opacity:1;
+}
+
+header #header-username[data-show="true"][data-mainview="false"] {
+    opacity:1;
+}
+
+header #header-username[data-show="false"][data-mainview="true"] {
+    opacity: 0;
+}
+
+header #header-username[data-show="false"][data-mainview="false"] {
+    opacity: 1;
+}
+
+.userBanner {
+    flex-direction: row;
+}
+
+.userBanner--photo {
+    padding-left: 1.5rem;
+    padding-right: 0.75rem;
+}
+
+.userBanner--fullName {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.userBanner-details--item {
+    margin-bottom: 0px;
+}
+
+.userBanner-options {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: 100%;
+    padding: 30px 11px;
+    margin-right: 8px;
+}
+
+.userBanner-options--wrapper {
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* OFFCANVAS */
+#sidebarToggleTop {
+    display: none;
+}
+
+.offcanvas {
+    position: sticky;
+    height: calc(100vh - 70px);
+    visibility: visible;
+}
+
+.offcanvas.offcanvas-start{
+    top: 70px;
+    transform: none;
+}

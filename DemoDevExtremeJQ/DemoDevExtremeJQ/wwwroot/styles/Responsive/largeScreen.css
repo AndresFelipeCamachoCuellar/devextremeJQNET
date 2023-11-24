@@ -1,0 +1,25 @@
+﻿/*min-width: 1200px*/
+
+.header-company-logo {
+    background-size: 150px;
+}
+
+#asideTopbarSeparator {
+    height: 109px;
+}
+
+header #header-username[data-show="true"][data-mainview="true"] {
+    opacity: 1;
+}
+
+header #header-username[data-show="true"][data-mainview="false"] {
+    opacity: 1;
+}
+
+header #header-username[data-show="false"][data-mainview="true"] {
+    opacity: 0;
+}
+
+header #header-username[data-show="false"][data-mainview="false"] {
+    opacity: 1;
+}
