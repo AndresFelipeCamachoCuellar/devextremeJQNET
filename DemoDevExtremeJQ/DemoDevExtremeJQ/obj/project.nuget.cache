@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FbJXI9avywLfP7VCA3jFffhPEw7wCPJLNri3FzUUtC1s1xaslXo9yXyJcBPgJb2JpPMM7T1gZ36ozp2hLls+GQ==",
+  "dgSpecHash": "qP7p83iBsEu0yXDBV/xma1q48xuDreHDwrt9a/ubgCYTWtcrNRJyI1Md81A6VT2iAeMO14kfOneL9E1JSxyCrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AndresFelipeCamachoC\\source\\repos\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
+  "projectFilePath": "C:\\Users\\AndresFelipeCamachoC\\OneDrive - Intelecto\\Documentos\\GitHub\\devextremeJQNET\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AndresFelipeCamachoC\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\AndresFelipeCamachoC\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

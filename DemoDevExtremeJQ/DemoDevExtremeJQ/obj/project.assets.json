@@ -657,11 +657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AndresFelipeCamachoC\\source\\repos\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
+      "projectUniqueName": "C:\\Users\\AndresFelipeCamachoC\\OneDrive - Intelecto\\Documentos\\GitHub\\devextremeJQNET\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
       "projectName": "DemoDevExtremeJQ",
-      "projectPath": "C:\\Users\\AndresFelipeCamachoC\\source\\repos\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
+      "projectPath": "C:\\Users\\AndresFelipeCamachoC\\OneDrive - Intelecto\\Documentos\\GitHub\\devextremeJQNET\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\DemoDevExtremeJQ.csproj",
       "packagesPath": "C:\\Users\\AndresFelipeCamachoC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AndresFelipeCamachoC\\source\\repos\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\obj\\",
+      "outputPath": "C:\\Users\\AndresFelipeCamachoC\\OneDrive - Intelecto\\Documentos\\GitHub\\devextremeJQNET\\DemoDevExtremeJQ\\DemoDevExtremeJQ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
